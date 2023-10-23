@@ -1,0 +1,12 @@
+import sys
+
+case = int(sys.stdin.readline().rstrip())
+
+for i in range(case):
+    line = sys.stdin.readline().rstrip()
+
+    count = 0
+    for j in range(0, len(line)):
+        if line[j]=="a" or line[j]=="e" or line[j]== "i" or line[j]=="o" or line=="u":
+            count+=1
+    print(count)
